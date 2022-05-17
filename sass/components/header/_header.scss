@@ -1,0 +1,13 @@
+.header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #ececec;
+}
+.site-nav {
+  display: flex;
+  align-items: center;
+
+  & .link:hover,
+  & .link:focus {
+    color: var(--accent-color);
+  }
+}

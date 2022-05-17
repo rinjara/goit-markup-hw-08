@@ -1,0 +1,51 @@
+body {
+  color: var(--primary-text-color);
+  background-color: var(--main-white, #ffffff);
+
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+.list {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+.link,
+.link:visited {
+  text-decoration: none;
+  font-family: inherit;
+
+  transition-property: color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+}
+.portfolio-link {
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
+
+  transition-property: color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+}
+.section:not(.work-areas) {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.button {
+  border-radius: 4px;
+  min-width: 200px;
+  border: none;
+
+  color: var(--main-white);
+  background-color: var(--accent-color);
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  cursor: pointer;
+}

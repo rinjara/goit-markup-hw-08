@@ -1,0 +1,43 @@
+////////////////////   Main    ////////////////
+
+@import './utils/variables';
+@import './base/reset';
+@import './base/common';
+
+////////////////////   Header  ////////////////
+
+@import './base/container';
+@import './components/common/titles';
+@import './components/header/header';
+@import './components/common/logo';
+@import './components/header/navigation';
+@import './components/header/contacts';
+
+////////////////////   Studio   //////////////
+
+@import './utils/hidden';
+@import './components/studio/hero';
+@import './components/studio/skills';
+@import './components/studio/work-areas';
+@import './components/studio/team';
+@import './components/common/soc-media-list';
+@import './components/studio/clients';
+
+////////////////////   Portfolio  //////////////
+
+@import './components/portfolio/filter';
+@import './components/portfolio/gallery';
+
+////////////////////   Footer    //////////////
+
+@import './components/footer/footer';
+@import './components/footer/adress';
+@import './components/footer/subscription';
+
+////////////////////   Modal   //////////////
+
+@import './components/modal/backdrop';
+@import './components/modal/modal';
+@import './components/modal/close-button';
+@import './components/modal/modal-form';
+@import './components/modal/check-box';
