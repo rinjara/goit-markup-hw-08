@@ -1,44 +1,44 @@
-.agreement {
-  margin-bottom: 30px;
-}
-.confirm-label {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+// .agreement {
+//   margin-bottom: 30px;
+// }
+// .confirm-label {
+//   position: relative;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
 
-  font-size: 14px;
-  line-height: 1.7;
+//   font-size: 14px;
+//   line-height: 1.7;
 
-  color: var(--secondary-text-color);
+//   color: var(--secondary-text-color);
 
-  &::before {
-    content: '';
-    width: 16px;
-    height: 15px;
+//   &::before {
+//     content: '';
+//     width: 16px;
+//     height: 15px;
 
-    border: 2px solid var(--primary-text-color);
-    border-radius: 3px;
-    margin-right: 8px;
-  }
+//     border: 2px solid var(--primary-text-color);
+//     border-radius: 3px;
+//     margin-right: 8px;
+//   }
 
-  .modal-check:checked + &::before {
-    background-color: var(--accent-color);
-    background-image: url(../images/icons/check-icon.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    border: transparent;
-  }
-  .modal-check:hover + &::before,
-  .modal-check:focus + &::before {
-    border-color: var(--accent-color);
-  }
-}
-.link.confirm-rools {
-  margin-left: 4px;
+//   .modal-check:checked + &::before {
+//     background-color: var(--accent-color);
+//     background-image: url(../images/icons/check-icon.svg);
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     background-size: contain;
+//     border: transparent;
+//   }
+//   .modal-check:hover + &::before,
+//   .modal-check:focus + &::before {
+//     border-color: var(--accent-color);
+//   }
+// }
+// .link.confirm-rools {
+//   margin-left: 4px;
 
-  color: var(--accent-color);
-  line-height: 0.85;
-  border-bottom: 1px solid var(--accent-color);
-}
+//   color: var(--accent-color);
+//   line-height: 0.85;
+//   border-bottom: 1px solid var(--accent-color);
+// }

@@ -27,34 +27,49 @@
             <span class="logo__accent">Web</span>Studio
           </a>
 
-          <ul class="nav list">
-            <li class="nav__item">
-              <a href="./index.html" class="nav__link link current"> Студия </a>
-            </li>
-            <li class="nav__item">
-              <a href="./portfolio.html" class="nav__link link"> Портфолио </a>
-            </li>
-            <li class="nav__item">
-              <a href="" target="_blank" class="nav__link link"> Контакты </a>
-            </li>
-          </ul>
+          <button
+            type="button"
+            class="menu-button"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button
+          >
+            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+              <use class="icon-menu" href="./images/icons/icons.svg#icon-menu_mob"></use>
+              <use class="icon-cross" href="./images/icons/icons.svg#icon-close-btn"></use>
+            </svg>
+          </button>
 
-          <ul class="contacts list">
-            <li class="contacts__item">
-              <a href="mailto:info@devstudio.com" class="contacts__link link">
-                <svg class="contacts__icon" width="16" height="12">
-                  <use href="./images/icons/icons.svg#prefix__icon-envelope"></use></svg
-                >info@devstudio.com
-              </a>
-            </li>
-            <li class="contacts__item">
-              <a href="tel:+380961111111" class="contacts__link link">
-                <svg class="contacts__icon" width="10" height="16">
-                  <use href="./images/icons/icons.svg#prefix__icon-smartphone"></use></svg
-                >+38 096 111 11 11
-              </a>
-            </li>
-          </ul>
+          <div class="menu-container" id="menu-container" data-menu>
+            <ul class="nav list">
+              <li class="nav__item">
+                <a href="./index.html" class="nav__link link current"> Студия </a>
+              </li>
+              <li class="nav__item">
+                <a href="./portfolio.html" class="nav__link link"> Портфолио </a>
+              </li>
+              <li class="nav__item">
+                <a href="" target="_blank" class="nav__link link"> Контакты </a>
+              </li>
+            </ul>
+
+            <ul class="contacts list">
+              <li class="contacts__item">
+                <a href="mailto:info@devstudio.com" class="contacts__link link">
+                  <svg class="contacts__icon" width="16" height="12">
+                    <use href="./images/icons/icons.svg#prefix__icon-envelope"></use></svg
+                  >info@devstudio.com
+                </a>
+              </li>
+              <li class="contacts__item">
+                <a href="tel:+380961111111" class="contacts__link link">
+                  <svg class="contacts__icon" width="10" height="16">
+                    <use href="./images/icons/icons.svg#prefix__icon-smartphone"></use></svg
+                  >+38 096 111 11 11
+                </a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
     </header>
@@ -168,7 +183,7 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="our-team list">
             <li class="team-member igor">
-              <img src="./images/img4.jpg" alt="Фото Игорь Демьяненко" width="270" height="260" />
+              <img src="./images/img4.jpg" alt="Фото Игорь Демьяненко" />
               <div class="description">
                 <h3 class="name">Игорь Демьяненко</h3>
                 <p lang="en" class="position">Product Designer</p>
@@ -205,7 +220,7 @@
               </div>
             </li>
             <li class="team-member olga">
-              <img src="./images/img5.jpg" alt="Фото Ольга Репина" width="270" height="260" />
+              <img src="./images/img5.jpg" alt="Фото Ольга Репина" />
               <div class="description">
                 <h3 class="name">Ольга Репина</h3>
                 <p lang="en" class="position">Frontend Developer</p>
@@ -242,7 +257,7 @@
               </div>
             </li>
             <li class="team-member nicholas">
-              <img src="./images/img6.jpg" alt="Фото Николай Тарасов" width="270" height="260" />
+              <img src="./images/img6.jpg" alt="Фото Николай Тарасов" />
               <div class="description">
                 <h3 class="name">Николай Тарасов</h3>
                 <p lang="en" class="position">Marketing</p>
@@ -279,7 +294,7 @@
               </div>
             </li>
             <li class="team-member michael">
-              <img src="./images/img7.jpg" alt="Фото Михаил Ермаков" width="270" height="260" />
+              <img src="./images/img7.jpg" alt="Фото Михаил Ермаков" />
               <div class="description">
                 <h3 class="name">Михаил Ермаков</h3>
                 <p lang="en" class="position">UI Designer</p>
@@ -324,43 +339,43 @@
       <section class="section clients">
         <div class="container">
           <h2 class="section-title">Постоянные клиенты</h2>
-          <ul class="clients-list list">
-            <li class="client-list-item">
+          <ul class="client-list list">
+            <li class="client-list__item">
               <a href="" class="client-company link">
                 <svg class="client-icon" width="41" height="46.7">
                   <use href="./images/icons/icons.svg#prefix__icon-yaco"></use>
                 </svg>
               </a>
             </li>
-            <li class="client-list-item">
+            <li class="client-list__item">
               <a href="" class="client-company link">
                 <svg class="client-icon" width="40" height="52">
                   <use href="./images/icons/icons.svg#prefix__icon-company-tagline"></use>
                 </svg>
               </a>
             </li>
-            <li class="client-list-item">
+            <li class="client-list__item">
               <a href="" class="client-company link">
                 <svg class="client-icon" width="43" height="41">
                   <use href="./images/icons/icons.svg#prefix__icon-company"></use>
                 </svg>
               </a>
             </li>
-            <li class="client-list-item">
+            <li class="client-list__item">
               <a href="" class="client-company link">
                 <svg class="client-icon" width="84" height="41">
                   <use href="./images/icons/icons.svg#prefix__icon-foster-petters"></use>
                 </svg>
               </a>
             </li>
-            <li class="client-list-item">
+            <li class="client-list__item">
               <a href="" class="client-company link">
                 <svg class="client-icon" width="63" height="45">
                   <use href="./images/icons/icons.svg#prefix__icon-brand"></use>
                 </svg>
               </a>
             </li>
-            <li class="client-list-item">
+            <li class="client-list__item">
               <a href="" class="client-company link">
                 <svg class="client-icon" width="94" height="44">
                   <use href="./images/icons/icons.svg#prefix__icon-tag-line"></use>

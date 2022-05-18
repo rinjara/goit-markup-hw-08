@@ -5,12 +5,14 @@ body {
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
 }
+
 .list {
   padding: 0;
   margin: 0;
 
   list-style: none;
 }
+
 .link,
 .link:visited {
   text-decoration: none;
@@ -20,6 +22,7 @@ body {
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
 }
+
 .portfolio-link {
   text-decoration: none;
   color: inherit;
@@ -29,10 +32,17 @@ body {
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
 }
+
 .section:not(.work-areas) {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
+
 .button {
   border-radius: 4px;
   min-width: 200px;

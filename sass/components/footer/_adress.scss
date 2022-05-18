@@ -1,21 +1,21 @@
-.address-list__item:not(:last-child) {
-  display: block;
-  margin-bottom: 9px;
-}
-.address-list__link {
-  color: rgba(255, 255, 255, 0.6);
+// .address-list__item:not(:last-child) {
+//   display: block;
+//   margin-bottom: 9px;
+// }
+// .address-list__link {
+//   color: rgba(255, 255, 255, 0.6);
 
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+//   font-style: normal;
+//   font-weight: 400;
+//   font-size: 14px;
+//   line-height: 1.71;
 
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
-  }
+//   &:hover,
+//   &:focus {
+//     color: var(--accent-color);
+//   }
 
-  &--white {
-    color: var(--main-white);
-  }
-}
+//   &--white {
+//     color: var(--main-white);
+//   }
+// }

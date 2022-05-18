@@ -1,10 +1,23 @@
 .filter-list {
-  padding-bottom: 50px;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+
+  padding-bottom: 40px;
+  margin-bottom: -15px;
+  margin-right: -8px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 30px;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 50px;
+  }
 }
-.filter-list .item:not(:last-child) {
+.filter-list__item {
   margin-right: 8px;
+  margin-bottom: 15px;
 }
 
 .filter-button {
