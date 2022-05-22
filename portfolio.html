@@ -20,7 +20,6 @@
 
   <body>
     <!-- Шапка -->
-
     <header class="header">
       <div class="container">
         <nav class="site-nav">
@@ -28,34 +27,49 @@
             <span class="logo__accent">Web</span>Studio
           </a>
 
-          <ul class="nav list">
-            <li class="nav__item">
-              <a href="./index.html" class="nav__link link"> Студия </a>
-            </li>
-            <li class="nav__item">
-              <a href="./portfolio.html" class="nav__link link current"> Портфолио </a>
-            </li>
-            <li class="nav__item">
-              <a href="" target="_blank" class="nav__link link"> Контакты </a>
-            </li>
-          </ul>
+          <button
+            type="button"
+            class="menu-button"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button
+          >
+            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+              <use class="icon-menu" href="./images/icons/icons.svg#icon-menu_mob"></use>
+              <use class="icon-cross" href="./images/icons/icons.svg#icon-close-btn"></use>
+            </svg>
+          </button>
 
-          <ul class="contacts list">
-            <li class="contacts__item">
-              <a href="mailto:info@devstudio.com" class="contacts__link link">
-                <svg class="contacts__icon" width="16" height="12">
-                  <use href="./images/icons/icons.svg#prefix__icon-envelope"></use></svg
-                >info@devstudio.com
-              </a>
-            </li>
-            <li class="contacts__item">
-              <a href="tel:+380961111111" class="contacts__link link">
-                <svg class="contacts__icon" width="10" height="16">
-                  <use href="./images/icons/icons.svg#prefix__icon-smartphone"></use></svg
-                >+38 096 111 11 11
-              </a>
-            </li>
-          </ul>
+          <div class="menu-container" id="menu-container" data-menu>
+            <ul class="nav list">
+              <li class="nav__item">
+                <a href="./index.html" class="nav__link link"> Студия </a>
+              </li>
+              <li class="nav__item">
+                <a href="./portfolio.html" class="nav__link link current"> Портфолио </a>
+              </li>
+              <li class="nav__item">
+                <a href="" target="_blank" class="nav__link link"> Контакты </a>
+              </li>
+            </ul>
+
+            <ul class="contacts list">
+              <li class="contacts__item">
+                <a href="mailto:info@devstudio.com" class="contacts__link link">
+                  <svg class="contacts__icon" width="16" height="12">
+                    <use href="./images/icons/icons.svg#prefix__icon-envelope"></use></svg
+                  >info@devstudio.com
+                </a>
+              </li>
+              <li class="contacts__item">
+                <a href="tel:+380961111111" class="contacts__link link">
+                  <svg class="contacts__icon" width="10" height="16">
+                    <use href="./images/icons/icons.svg#prefix__icon-smartphone"></use></svg
+                  >+38 096 111 11 11
+                </a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
     </header>
@@ -105,7 +119,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="text">
+                <div class="project-label">
                   <h3 class="project-title">Технокряк</h3>
                   <p class="project-type">Веб-сайт</p>
                 </div>
@@ -124,7 +138,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="text">
+                <div class="project-label">
                   <h3 class="project-title">
                     Постер <span lang="en"> New Orlean vs Golden Star </span>
                   </h3>
@@ -145,7 +159,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="text">
+                <div class="project-label">
                   <h3 class="project-title">Ресторан <span lang="en">Seafood</span></h3>
                   <p class="project-type">Приложение</p>
                 </div>
@@ -164,7 +178,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="text">
+                <div class="project-label">
                   <h3 class="project-title">Проект <span lang="en">Prime</span></h3>
                   <p class="project-type">Маркетинг</p>
                 </div>
@@ -184,7 +198,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="text">
+                <div class="project-label">
                   <h3 class="project-title">Проект Boxes</h3>
                   <p class="project-type">Приложение</p>
                 </div>
@@ -206,7 +220,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="text">
+                <div class="project-label">
                   <h3 class="project-title">Inspiration has no Borders</h3>
                   <p class="project-type">Веб-сайт</p>
                 </div>
@@ -225,7 +239,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="text">
+                <div class="project-label">
                   <h3 class="project-title">Издание Limited Edition</h3>
                   <p class="project-type">Дизайн</p>
                 </div>
@@ -244,7 +258,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="text">
+                <div class="project-label">
                   <h3 class="project-title">Проект LAB</h3>
                   <p class="project-type">Маркетинг</p>
                 </div>
@@ -266,7 +280,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="text">
+                <div class="project-label">
                   <h3 class="project-title">Growing Business</h3>
                   <p class="project-type">Приложение</p>
                 </div>
@@ -281,67 +295,69 @@
 
     <footer class="footer">
       <div class="container footer__flex">
-        <div>
-          <a href="./index.html" lang="en" class="logo footer__logo">
-            <span class="logo__accent">Web</span>Studio
-          </a>
+        <div class="tablet-flex">
+          <div>
+            <a href="./index.html" lang="en" class="logo footer__logo">
+              <span class="logo__accent">Web</span>Studio
+            </a>
 
-          <address>
-            <ul class="address-list list">
-              <li class="address-list__item">
-                <a
-                  href="https://goo.gl/maps/A1SFex8QC9FyxfqN6"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="address-list__link address-list__link--white link"
-                >
-                  г. Киев, пр-т Леси Украинки, 26
+            <address>
+              <ul class="address-list list">
+                <li class="address-list__item">
+                  <a
+                    href="https://goo.gl/maps/A1SFex8QC9FyxfqN6"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="address-list__link address-list__link--white link"
+                  >
+                    г. Киев, пр-т Леси Украинки, 26
+                  </a>
+                </li>
+                <li class="address-list__item">
+                  <a href="mailto:info@example.com" class="address-list__link link">
+                    info@example.com
+                  </a>
+                </li>
+                <li class="address-list__item">
+                  <a href="tel:+380991111111" class="address-list__link link">+38 099 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="social-links">
+            <h2 class="visually-hidden">Социальные сети</h2>
+            <h3 class="block-title">Присоединяйтесь</h3>
+            <ul class="social-media-list list">
+              <li class="social-media-list__icon">
+                <a href="" class="social-media-list__link social-media-list__link--dark">
+                  <svg class="icon" width="20" height="20">
+                    <use href="./images/icons/icons.svg#prefix__icon-instagram"></use>
+                  </svg>
                 </a>
               </li>
-              <li class="address-list__item">
-                <a href="mailto:info@example.com" class="address-list__link link">
-                  info@example.com
+              <li class="social-media-list__icon">
+                <a href="" class="social-media-list__link social-media-list__link--dark">
+                  <svg class="icon" width="20" height="20">
+                    <use href="./images/icons/icons.svg#prefix__icon-twitter"></use>
+                  </svg>
                 </a>
               </li>
-              <li class="address-list__item">
-                <a href="tel:+380991111111" class="address-list__link link">+38 099 111 11 11</a>
+              <li class="social-media-list__icon">
+                <a href="" class="social-media-list__link social-media-list__link--dark">
+                  <svg class="icon" width="20" height="20">
+                    <use href="./images/icons/icons.svg#prefix__icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-media-list__icon">
+                <a href="" class="social-media-list__link social-media-list__link--dark">
+                  <svg class="icon" width="20" height="20">
+                    <use href="./images/icons/icons.svg#prefix__icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="social-links">
-          <h2 class="visually-hidden">Социальные сети</h2>
-          <h3 class="block-title">Присоединяйтесь</h3>
-          <ul class="social-media-list list">
-            <li class="social-media-list__icon">
-              <a href="" class="social-media-list__link social-media-list__link--dark">
-                <svg class="icon" width="20" height="20">
-                  <use href="./images/icons/icons.svg#prefix__icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-media-list__icon">
-              <a href="" class="social-media-list__link social-media-list__link--dark">
-                <svg class="icon" width="20" height="20">
-                  <use href="./images/icons/icons.svg#prefix__icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-media-list__icon">
-              <a href="" class="social-media-list__link social-media-list__link--dark">
-                <svg class="icon" width="20" height="20">
-                  <use href="./images/icons/icons.svg#prefix__icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-media-list__icon">
-              <a href="" class="social-media-list__link social-media-list__link--dark">
-                <svg class="icon" width="20" height="20">
-                  <use href="./images/icons/icons.svg#prefix__icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
 
         <form class="subscription-form">

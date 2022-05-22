@@ -5,10 +5,28 @@
   background-color: var(--dark-bg-color);
 
   &__flex {
-    // display: flex;
-    // align-items: baseline;
+    text-align: center;
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      justify-content: center;
+      align-items: baseline;
+      text-align: start;
+    }
   }
 }
 .social-links {
-  margin-left: 70px;
+  @media screen and (max-width: 767.99px) {
+    margin-top: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+  }
+}
+.tablet-flex {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
 }

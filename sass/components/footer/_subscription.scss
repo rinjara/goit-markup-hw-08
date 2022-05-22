@@ -1,46 +1,70 @@
-// .subscription-form {
-//   margin-left: 93px;
+.subscription-form {
+  margin-top: 60px;
 
-//   &__field {
-//     display: flex;
-//   }
-//   &__button {
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+    margin-left: 93px;
+  }
 
-//     padding: 10px;
-//     margin-left: 12px;
+  &__field {
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
+  }
+  &__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 
-//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-//   }
+    padding: 10px;
+    margin-top: 20px;
 
-//   &__icon {
-//     margin-left: 10px;
-//   }
-// }
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
-// .subscription-form__input {
-//   width: 358px;
-//   height: 50px;
-//   padding-left: 16px;
+    @media screen and (min-width: 1200px) {
+      margin-top: 0;
+      margin-left: 12px;
+    }
+  }
 
-//   border: 1px solid rgba(255, 255, 255, 0.3);
-//   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-//   border-radius: 4px;
+  &__icon {
+    margin-left: 10px;
+  }
+}
 
-//   background-color: transparent;
-//   color: var(--main-white);
-//   outline: none;
+.subscription-form__input {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
 
-//   cursor: pointer;
-//   transition: border-color var(--transition-duration) var(--transition-timing-function);
+  height: 50px;
+  padding-left: 16px;
 
-//   &::placeholder {
-//     color: rgba(255, 255, 255, 0.6);
-//   }
-//   &:hover,
-//   &:focus {
-//     border-color: var(--accent-color);
-//   }
-// }
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  background-color: transparent;
+  color: var(--main-white);
+  outline: none;
+
+  cursor: pointer;
+  transition: border-color var(--transition-duration) var(--transition-timing-function);
+
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
+}
