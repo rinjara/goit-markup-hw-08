@@ -1,24 +1,24 @@
-// .close-icon {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
+.close-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-//   position: absolute;
-//   top: 8px;
-//   right: 8px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
 
-//   width: 30px;
-//   height: 30px;
+  width: 30px;
+  height: 30px;
 
-//   background-color: transparent;
-//   border: 1px solid rgba(0, 0, 0, 0.1);
-//   border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
 
-//   cursor: pointer;
-//   transition: fill var(--transition-duration) var(--transition-timing-function);
+  cursor: pointer;
+  transition: fill var(--transition-duration) var(--transition-timing-function);
 
-//   &:hover,
-//   &:focus {
-//     fill: var(--accent-color);
-//   }
-// }
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+}

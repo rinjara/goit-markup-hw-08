@@ -36,7 +36,7 @@
           >
             <svg width="40" height="40" aria-label="Переключатель мобильного меню">
               <use class="icon-menu" href="./images/icons/icons.svg#icon-menu_mob"></use>
-              <use class="icon-cross" href="./images/icons/icons.svg#icon-close-btn"></use>
+              <use class="icon-cross" href="./images/icons/icons.svg#icon-close-menu"></use>
             </svg>
           </button>
 
@@ -145,29 +145,61 @@
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="work-areas-list list">
             <li class="work-area-item">
-              <img src="./images/img1.jpg" alt="Пишем код" width="370" height="294" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/studio/work-areas/desktop.jpg    1x,
+                    ./images/studio/work-areas/desktop@2x.jpg 2x,
+                    ./images/studio/work-areas/desktop@3x.jpg 3x
+                  "
+                />
+                <img
+                  src="./images/studio/work-areas/desktop.jpg"
+                  alt="Пишем код"
+                  width="370"
+                  height="294"
+                />
+              </picture>
               <div class="text-over">
                 <p>Десктопные приложения</p>
               </div>
             </li>
             <li class="work-area-item">
-              <img
-                src="./images/img2.jpg"
-                alt="Тестируем приложения на смартфоне"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/studio/work-areas/mobile.jpg    1x,
+                    ./images/studio/work-areas/mobile@2x.jpg 2x,
+                    ./images/studio/work-areas/mobile@3x.jpg 3x
+                  "
+                />
+                <img
+                  src="./images/studio/work-areas/mobile.jpg"
+                  alt="Тестируем приложения на смартфоне"
+                  width="370"
+                  height="294"
+                />
+              </picture>
               <div class="text-over">
                 <p>Мобильные приложения</p>
               </div>
             </li>
             <li class="work-area-item">
-              <img
-                src="./images/img3.jpg"
-                alt="Подбираем цветовую гамму"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/studio/work-areas/design.jpg    1x,
+                    ./images/studio/work-areas/design@2x.jpg 2x,
+                    ./images/studio/work-areas/design@3x.jpg 3x
+                  "
+                />
+                <img
+                  src="./images/studio/work-areas/design.jpg"
+                  alt="Подбираем цветовую гамму"
+                  width="370"
+                  height="294"
+                />
+              </picture>
               <div class="text-over">
                 <p>Дизайнерские решения</p>
               </div>
@@ -183,7 +215,16 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="our-team list">
             <li class="team-member igor">
-              <img src="./images/img4.jpg" alt="Фото Игорь Демьяненко" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/studio/team/ihor.jpg    1x,
+                    ./images/studio/team/ihor@2x.jpg 2x,
+                    ./images/studio/team/ihor@3x.jpg 3x
+                  "
+                />
+                <img src="./images/studio/team/ihor.jpg" alt="Фото Игорь Демьяненко" />
+              </picture>
               <div class="description">
                 <h3 class="name">Игорь Демьяненко</h3>
                 <p lang="en" class="position">Product Designer</p>
@@ -220,7 +261,16 @@
               </div>
             </li>
             <li class="team-member olga">
-              <img src="./images/img5.jpg" alt="Фото Ольга Репина" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/studio/team/olga.jpg    1x,
+                    ./images/studio/team/olga@2x.jpg 2x,
+                    ./images/studio/team/olga@3x.jpg 3x
+                  "
+                />
+                <img src="./images/studio/team/olga.jpg" alt="Фото Ольга Репина" />
+              </picture>
               <div class="description">
                 <h3 class="name">Ольга Репина</h3>
                 <p lang="en" class="position">Frontend Developer</p>
@@ -257,7 +307,16 @@
               </div>
             </li>
             <li class="team-member nicholas">
-              <img src="./images/img6.jpg" alt="Фото Николай Тарасов" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/studio/team/nikola.jpg    1x,
+                    ./images/studio/team/nikola@2x.jpg 2x,
+                    ./images/studio/team/nikola@3x.jpg 3x
+                  "
+                />
+                <img src="./images/studio/team/nikola.jpg" alt="Фото Николай Тарасов" />
+              </picture>
               <div class="description">
                 <h3 class="name">Николай Тарасов</h3>
                 <p lang="en" class="position">Marketing</p>
@@ -294,7 +353,16 @@
               </div>
             </li>
             <li class="team-member michael">
-              <img src="./images/img7.jpg" alt="Фото Михаил Ермаков" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/studio/team/michajlo.jpg    1x,
+                    ./images/studio/team/michajlo@2x.jpg 2x,
+                    ./images/studio/team/michajlo@3x.jpg 3x
+                  "
+                />
+                <img src="./images/studio/team/michajlo.jpg" alt="Фото Михаил Ермаков" />
+              </picture>
               <div class="description">
                 <h3 class="name">Михаил Ермаков</h3>
                 <p lang="en" class="position">UI Designer</p>
@@ -488,7 +556,7 @@
             <use href="./images/icons/icons.svg#icon-close-btn"></use>
           </svg>
         </button>
-        <h2 class="hidden-title">Форма заказа услуги</h2>
+        <h2 class="visually-hidden">Форма заказа услуги</h2>
         <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
         <form class="form" autocomplete="off">
           <div class="form-field">
@@ -536,13 +604,14 @@
             />
             <label for="confirm" class="confirm-label">
               Соглашаюсь с рассылкой и принимаю
-              <a href="" class="link confirm-rools">Условия договора</a>
-            </label>
+              <a href="" class="link confirm-rools">Условия договора</a></label
+            >
           </div>
           <button type="submit" class="button send-button">Отправить</button>
         </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

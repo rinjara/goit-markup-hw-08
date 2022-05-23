@@ -6,6 +6,11 @@ body {
   letter-spacing: 0.03em;
 }
 
+body.modal-open,
+body.menu-open {
+  overflow: hidden;
+}
+
 .list {
   padding: 0;
   margin: 0;
