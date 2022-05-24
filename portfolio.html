@@ -53,22 +53,39 @@
               </li>
             </ul>
 
-            <ul class="contacts list">
-              <li class="contacts__item">
-                <a href="mailto:info@devstudio.com" class="contacts__link link">
-                  <svg class="contacts__icon" width="16" height="12">
-                    <use href="./images/icons/icons.svg#prefix__icon-envelope"></use></svg
-                  >info@devstudio.com
-                </a>
-              </li>
-              <li class="contacts__item">
-                <a href="tel:+380961111111" class="contacts__link link">
-                  <svg class="contacts__icon" width="10" height="16">
-                    <use href="./images/icons/icons.svg#prefix__icon-smartphone"></use></svg
-                  >+38 096 111 11 11
-                </a>
-              </li>
-            </ul>
+            <div class="contacts-block">
+              <ul class="contacts list">
+                <li class="contacts__item">
+                  <a href="mailto:info@devstudio.com" class="contacts__link mail link">
+                    <svg class="contacts__icon" width="16" height="12">
+                      <use href="./images/icons/icons.svg#prefix__icon-envelope"></use></svg
+                    >info@devstudio.com
+                  </a>
+                </li>
+                <li class="contacts__item">
+                  <a href="tel:+380961111111" class="contacts__link tel link">
+                    <svg class="contacts__icon" width="10" height="16">
+                      <use href="./images/icons/icons.svg#prefix__icon-smartphone"></use></svg
+                    >+38 096 111 11 11
+                  </a>
+                </li>
+              </ul>
+
+              <ul class="menu-soc-list">
+                <li class="menu-soc-list__item">
+                  <a href="" class="menu-soc-list__link link">Instagram</a>
+                </li>
+                <li class="menu-soc-list__item">
+                  <a href="" class="menu-soc-list__link link">Twitter</a>
+                </li>
+                <li class="menu-soc-list__item">
+                  <a href="" class="menu-soc-list__link link">Facebook</a>
+                </li>
+                <li class="menu-soc-list__item">
+                  <a href="" class="menu-soc-list__link link">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </nav>
       </div>
@@ -117,15 +134,8 @@
                         ./images/portfolio/mobile/technokrack@2x.jpg 2x,
                         ./images/portfolio/mobile/technokrack@3x.jpg 3x
                       "
-                      media="(max-width: 480px)"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio/tablet/technokrack.jpg    1x,
-                        ./images/portfolio/tablet/technokrack@2x.jpg 2x,
-                        ./images/portfolio/tablet/technokrack@3x.jpg 3x
-                      "
-                      media="(min-width: 481px)"
+                      type="image/jpeg"
+                      media="(max-width: 767px)"
                     />
                     <source
                       srcset="
@@ -133,7 +143,17 @@
                         ./images/portfolio/full/technokrack@2x.jpg 2x,
                         ./images/portfolio/full/technokrack@3x.jpg 3x
                       "
-                      media="(min-width: 769px)"
+                      type="image/jpeg"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/technokrack.jpg    1x,
+                        ./images/portfolio/tablet/technokrack@2x.jpg 2x,
+                        ./images/portfolio/tablet/technokrack@3x.jpg 3x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 768px)"
                     />
                     <img
                       src="./images/portfolio/full/technokrack.jpg"
@@ -165,15 +185,8 @@
                         ./images/portfolio/mobile/poster@2x.jpg 2x,
                         ./images/portfolio/mobile/poster@3x.jpg 3x
                       "
-                      media="(max-width: 480px)"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio/tablet/poster.jpg    1x,
-                        ./images/portfolio/tablet/poster@2x.jpg 2x,
-                        ./images/portfolio/tablet/poster@3x.jpg 3x
-                      "
-                      media="(min-width: 481px)"
+                      type="image/jpeg"
+                      media="(max-width: 767px)"
                     />
                     <source
                       srcset="
@@ -181,10 +194,20 @@
                         ./images/portfolio/full/poster@2x.jpg 2x,
                         ./images/portfolio/full/poster@3x.jpg 3x
                       "
-                      media="(min-width: 769px)"
+                      type="image/jpeg"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/poster.jpg    1x,
+                        ./images/portfolio/tablet/poster@2x.jpg 2x,
+                        ./images/portfolio/tablet/poster@3x.jpg 3x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 768px)"
                     />
                     <img
-                      src="./images/portfolio/full/poster.jpg"
+                      src="./images/portfolio/mobile/poster.jpg"
                       alt="Постер New Orlean vs Golden Star"
                     />
                   </picture>
@@ -215,15 +238,8 @@
                         ./images/portfolio/mobile/seafood@2x.jpg 2x,
                         ./images/portfolio/mobile/seafood@3x.jpg 3x
                       "
-                      media="(max-width: 480px)"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio/tablet/seafood.jpg    1x,
-                        ./images/portfolio/tablet/seafood@2x.jpg 2x,
-                        ./images/portfolio/tablet/seafood@3x.jpg 3x
-                      "
-                      media="(min-width: 481px)"
+                      type="image/jpeg"
+                      media="(max-width: 767px)"
                     />
                     <source
                       srcset="
@@ -231,7 +247,17 @@
                         ./images/portfolio/full/seafood@2x.jpg 2x,
                         ./images/portfolio/full/seafood@3x.jpg 3x
                       "
-                      media="(min-width: 769px)"
+                      type="image/jpeg"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/seafood.jpg    1x,
+                        ./images/portfolio/tablet/seafood@2x.jpg 2x,
+                        ./images/portfolio/tablet/seafood@3x.jpg 3x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 768px)"
                     />
                     <img src="./images/portfolio/full/seafood.jpg" alt="Ресторан Seafood лого" />
                   </picture>
@@ -260,15 +286,8 @@
                         ./images/portfolio/mobile/prime@2x.jpg 2x,
                         ./images/portfolio/mobile/prime@3x.jpg 3x
                       "
-                      media="(max-width: 480px)"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio/tablet/prime.jpg    1x,
-                        ./images/portfolio/tablet/prime@2x.jpg 2x,
-                        ./images/portfolio/tablet/prime@3x.jpg 3x
-                      "
-                      media="(min-width: 481px)"
+                      type="image/jpeg"
+                      media="(max-width: 767px)"
                     />
                     <source
                       srcset="
@@ -276,7 +295,17 @@
                         ./images/portfolio/full/prime@2x.jpg 2x,
                         ./images/portfolio/full/prime@3x.jpg 3x
                       "
-                      media="(min-width: 769px)"
+                      type="image/jpeg"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/prime.jpg    1x,
+                        ./images/portfolio/tablet/prime@2x.jpg 2x,
+                        ./images/portfolio/tablet/prime@3x.jpg 3x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 768px)"
                     />
                     <img src="./images/portfolio/full/prime.jpg" alt="Фото наушников" />
                   </picture>
@@ -305,15 +334,8 @@
                         ./images/portfolio/mobile/boxes@2x.jpg 2x,
                         ./images/portfolio/mobile/boxes@3x.jpg 3x
                       "
-                      media="(max-width: 480px)"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio/tablet/boxes.jpg    1x,
-                        ./images/portfolio/tablet/boxes@2x.jpg 2x,
-                        ./images/portfolio/tablet/boxes@3x.jpg 3x
-                      "
-                      media="(min-width: 481px)"
+                      type="image/jpeg"
+                      media="(max-width: 767px)"
                     />
                     <source
                       srcset="
@@ -321,7 +343,17 @@
                         ./images/portfolio/full/boxes@2x.jpg 2x,
                         ./images/portfolio/full/boxes@3x.jpg 3x
                       "
-                      media="(min-width: 769px)"
+                      type="image/jpeg"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/boxes.jpg    1x,
+                        ./images/portfolio/tablet/boxes@2x.jpg 2x,
+                        ./images/portfolio/tablet/boxes@3x.jpg 3x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 768px)"
                     />
                     <img src="./images/portfolio/full/boxes.jpg" alt="Коробки" />
                   </picture>
@@ -350,15 +382,8 @@
                         ./images/portfolio/mobile/inspiration@2x.jpg 2x,
                         ./images/portfolio/mobile/inspiration@3x.jpg 3x
                       "
-                      media="(max-width: 480px)"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio/tablet/inspiration.jpg    1x,
-                        ./images/portfolio/tablet/inspiration@2x.jpg 2x,
-                        ./images/portfolio/tablet/inspiration@3x.jpg 3x
-                      "
-                      media="(min-width: 481px)"
+                      type="image/jpeg"
+                      media="(max-width: 767px)"
                     />
                     <source
                       srcset="
@@ -366,7 +391,17 @@
                         ./images/portfolio/full/inspiration@2x.jpg 2x,
                         ./images/portfolio/full/inspiration@3x.jpg 3x
                       "
-                      media="(min-width: 769px)"
+                      type="image/jpeg"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/inspiration.jpg    1x,
+                        ./images/portfolio/tablet/inspiration@2x.jpg 2x,
+                        ./images/portfolio/tablet/inspiration@3x.jpg 3x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 768px)"
                     />
                     <img
                       src="./images/portfolio/full/inspiration.jpg"
@@ -398,15 +433,8 @@
                         ./images/portfolio/mobile/limited@2x.jpg 2x,
                         ./images/portfolio/mobile/limited@3x.jpg 3x
                       "
-                      media="(max-width: 480px)"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio/tablet/limited.jpg    1x,
-                        ./images/portfolio/tablet/limited@2x.jpg 2x,
-                        ./images/portfolio/tablet/limited@3x.jpg 3x
-                      "
-                      media="(min-width: 481px)"
+                      type="image/jpeg"
+                      media="(max-width: 767px)"
                     />
                     <source
                       srcset="
@@ -414,7 +442,17 @@
                         ./images/portfolio/full/limited@2x.jpg 2x,
                         ./images/portfolio/full/limited@3x.jpg 3x
                       "
-                      media="(min-width: 769px)"
+                      type="image/jpeg"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/limited.jpg    1x,
+                        ./images/portfolio/tablet/limited@2x.jpg 2x,
+                        ./images/portfolio/tablet/limited@3x.jpg 3x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 768px)"
                     />
                     <img src="./images/portfolio/full/limited.jpg" alt="Разворот журнала" />
                   </picture>
@@ -443,15 +481,8 @@
                         ./images/portfolio/mobile/lab@2x.jpg 2x,
                         ./images/portfolio/mobile/lab@3x.jpg 3x
                       "
-                      media="(max-width: 480px)"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio/tablet/lab.jpg    1x,
-                        ./images/portfolio/tablet/lab@2x.jpg 2x,
-                        ./images/portfolio/tablet/lab@3x.jpg 3x
-                      "
-                      media="(min-width: 481px)"
+                      type="image/jpeg"
+                      media="(max-width: 767px)"
                     />
                     <source
                       srcset="
@@ -459,7 +490,17 @@
                         ./images/portfolio/full/lab@2x.jpg 2x,
                         ./images/portfolio/full/lab@3x.jpg 3x
                       "
-                      media="(min-width: 769px)"
+                      type="image/jpeg"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/lab.jpg    1x,
+                        ./images/portfolio/tablet/lab@2x.jpg 2x,
+                        ./images/portfolio/tablet/lab@3x.jpg 3x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 768px)"
                     />
                     <img src="./images/portfolio/full/lab.jpg" alt="Проект LAB лого" />
                   </picture>
@@ -488,15 +529,8 @@
                         ./images/portfolio/mobile/growing@2x.jpg 2x,
                         ./images/portfolio/mobile/growing@3x.jpg 3x
                       "
-                      media="(max-width: 480px)"
-                    />
-                    <source
-                      srcset="
-                        ./images/portfolio/tablet/growing.jpg    1x,
-                        ./images/portfolio/tablet/growing@2x.jpg 2x,
-                        ./images/portfolio/tablet/growing@3x.jpg 3x
-                      "
-                      media="(min-width: 481px)"
+                      type="image/jpeg"
+                      media="(max-width: 767px)"
                     />
                     <source
                       srcset="
@@ -504,7 +538,17 @@
                         ./images/portfolio/full/growing@2x.jpg 2x,
                         ./images/portfolio/full/growing@3x.jpg 3x
                       "
-                      media="(min-width: 769px)"
+                      type="image/jpeg"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/growing.jpg    1x,
+                        ./images/portfolio/tablet/growing@2x.jpg 2x,
+                        ./images/portfolio/tablet/growing@3x.jpg 3x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 768px)"
                     />
                     <img
                       src="./images/portfolio/full/growing.jpg"
