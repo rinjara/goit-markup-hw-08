@@ -2,12 +2,16 @@
   background-color: var(--light-bg-color);
 }
 .our-team {
-  margin-top: -30px;
+  display: flex;
+  flex-direction: column;
 
   @media screen and (min-width: 768px) {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+
     margin-left: -30px;
+    margin-top: -30px;
   }
 }
 
@@ -18,15 +22,20 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 
-  margin-top: 30px;
-
   @media screen and (min-width: 768px) {
     width: calc((100% - 2 * 30px) / 2);
+    margin-top: 30px;
     margin-left: 30px;
   }
 
   @media screen and (min-width: 1200px) {
     width: calc((100% - 4 * 30px) / 4);
+  }
+}
+
+.team-member:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
   }
 }
 

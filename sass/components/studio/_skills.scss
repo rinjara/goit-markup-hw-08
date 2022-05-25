@@ -1,5 +1,6 @@
 .skills-list {
-  margin-top: -30px;
+  display: flex;
+  flex-direction: column;
 
   & h3 {
     margin-bottom: 10px;
@@ -24,14 +25,15 @@
 
   @media screen and (min-width: 768px) {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+
+    margin-top: -30px;
     margin-left: -30px;
   }
 }
 
 .skill {
-  margin-top: 30px;
-
   &-icon {
     display: flex;
     justify-content: center;
@@ -48,10 +50,17 @@
 
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 2 * 30px) / 2);
+    margin-top: 30px;
     margin-left: 30px;
   }
 
   @media screen and (min-width: 1200px) {
     flex-basis: calc((100% - 4 * 30px) / 4);
+  }
+}
+
+.skill:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
   }
 }
