@@ -1,5 +1,5 @@
 .skills-list {
-  margin-bottom: -30px;
+  margin-top: -30px;
 
   & h3 {
     margin-bottom: 10px;
@@ -30,7 +30,7 @@
 }
 
 .skill {
-  margin-bottom: 30px;
+  margin-top: 30px;
 
   &-icon {
     display: flex;
@@ -47,11 +47,11 @@
   }
 
   @media screen and (min-width: 768px) {
-    width: calc((100% - 2 * 30px) / 2);
+    flex-basis: calc((100% - 2 * 30px) / 2);
     margin-left: 30px;
   }
 
   @media screen and (min-width: 1200px) {
-    width: calc((100% - 4 * 30px) / 4);
+    flex-basis: calc((100% - 4 * 30px) / 4);
   }
 }

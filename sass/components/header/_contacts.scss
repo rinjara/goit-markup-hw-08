@@ -35,19 +35,23 @@
         letter-spacing: 0.02em;
         padding-bottom: 64px;
       }
-      @media screen and (min-width: 768px) and (max-width: 1199px) {
-        margin-bottom: 10px;
-      }
     }
 
     @media screen and (min-width: 1200px) {
-      padding-top: 32px;
-      padding-bottom: 32px;
+      // padding-top: 32px;
+      // padding-bottom: 32px;
 
       font-size: 14px;
       line-height: 1.14;
     }
   }
+
+  &__item:not(:last-child) {
+    @media screen and (min-width: 767.99px) and (max-width: 1199px) {
+      margin-bottom: 10px;
+    }
+  }
+
   &__icon {
     display: none;
 
@@ -64,16 +68,12 @@
     align-items: flex-start;
 
     margin-left: 84px;
-    padding-top: 21px;
-    padding-bottom: 10px;
   }
 
   @media screen and (min-width: 1200px) {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
-    // margin-left: 305px;
 
     &__item + &__item {
       margin-left: 50px;
